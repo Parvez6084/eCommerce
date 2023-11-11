@@ -35,7 +35,7 @@ class CartController extends GetxController{
 
   void deleteItem(int id){
     dbManager.deleteProductById(id).then((value) => {
-    ScaffoldMessenger.of(Get.context!).showSnackBar(const SnackBar(content: Text('Delete Item')))
+    ScaffoldMessenger.of(Get.context!).showSnackBar(const SnackBar(content: Text('Delete Item Success')))
     });
   }
 
