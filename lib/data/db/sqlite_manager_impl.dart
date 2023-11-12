@@ -14,7 +14,7 @@ class SQLiteManagerImpl extends SQLiteManager{
   Future<Database> _open()async{
     final rootPath = await getDatabasesPath();
     final dbPath = path.join(rootPath, 'eShopping.db');
-    return openDatabase(dbPath, version: 1, onCreate: _onCreate);
+    return openDatabase(dbPath, version: 2, onCreate: _onCreate);
   }
 
   Future _onCreate(Database db, int version)async{

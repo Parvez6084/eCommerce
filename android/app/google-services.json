@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572553703425",
+    "project_id": "ecommerce-5b38a",
+    "storage_bucket": "ecommerce-5b38a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572553703425:android:ae66b023c89e11cb091000",
+        "android_client_info": {
+          "package_name": "com.example.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADpakTIQ8JyZIzY8RvqVh6z3xjLNyn5LM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

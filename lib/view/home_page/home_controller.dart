@@ -1,6 +1,8 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:todo/model/product_model.dart';
+import 'package:todo/services/fcm.dart';
 import 'package:todo/services/remote_services.dart';
 
 
@@ -13,7 +15,12 @@ class HomeController extends GetxController{
   void getAllProduct()async{
     List<ProductModel> listOfProduct = await RemoteServices.getAllProductList();
     rxProductList.addAll(listOfProduct);
+
+    var fcmToken = await FirebaseMessaging.instance.getToken();
+    print(fcmToken);
   }
+
+
 
   @override
   void onInit() {

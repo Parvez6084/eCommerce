@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:todo/data/db/sqlite_manager.dart';
 import 'package:todo/data/db/sqlite_table.dart';
 import 'package:todo/model/product_model.dart';
+import 'package:todo/services/local_notification.dart';
 
 class DetailsController extends GetxController{
 

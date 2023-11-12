@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:todo/data/db/sqlite_manager.dart';
 import 'package:todo/data/db/sqlite_table.dart';
 import 'package:todo/model/product_model.dart';
+import 'package:todo/services/local_notification.dart';
 
 class CartController extends GetxController{
 
@@ -30,6 +31,7 @@ class CartController extends GetxController{
 
   void checkOut(){
     dbManager.deleteAllData(tableProduct);
+    LocalNotificationService.loadNotification(title: "Checkout Done",body: "Payment Done Successful!!");
     Get.back();
   }
 
